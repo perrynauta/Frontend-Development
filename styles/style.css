@@ -1,0 +1,136 @@
+/*
+    Algemene styling
+*/
+
+* {
+  padding: 0 0;
+  margin: 0 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url(".././images/ga_dunk.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+/*
+    Fonts ophalen
+*/
+
+
+@font-face{
+  font-family: "RefrigeratorDeluxe";
+  src: url("./fonts/RefrigeratorDeluxe.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "RefrigeratorBold";
+  src: url("./fonts/RefrigeratorDeluxeBold.ttf") format("truetype");
+}
+
+/*
+    Standaard font styling
+*/
+
+h1 {
+  /* font-family: RefrigeratorDeluxe; */
+  font-family: Arial;
+  font-size: 5em;
+  padding-bottom: 1.2em;
+  font-weight: 800;
+}
+
+h2 {
+  /* font-family: RefrigeratorDeluxe; */
+  font-family: Arial;
+  font-size: 2.5em;
+  text-decoration: overline;
+  letter-spacing: 0.25em;
+  padding-bottom: 1.5em;
+  font-weight: 300;
+
+}
+
+p {
+  /* font-family: RefrigeratorDeluxe; */
+  font-family: Arial;
+  font-size: 2em;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+
+}
+
+/*
+    Section 1
+*/
+
+section {
+  position: relative;
+  background-color: transparent;
+  width: 100vw;
+  height: 90vh;
+}
+
+section img {
+  position: absolute;
+  width: 26vw;
+  bottom: 5em;
+  top: auto;
+  left: calc(50% - 13vw);
+}
+
+/*
+    Section 2
+*/
+
+section:nth-of-type(2) {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00471B;
+  display: flex;
+  justify-content: center;
+}
+
+section:nth-of-type(2) article {
+  /* border: 1px solid red; */
+  width: 90vw;
+  margin-top: 7em;
+  color: #EEE1C6;
+}
+
+section:nth-of-type(2) article img {
+  position: absolute;
+  width: 130%;
+  left: -15%;
+  bottom: 3em;
+  top: auto;
+}
+
+/*
+    Section 3
+*/
+
+section:nth-of-type(3) {
+  position: relative;
+  width: 100vw;
+  height: 63vh;
+  background-color: #EEE1C6;
+  display: flex;
+  justify-content: center;
+}
+
+section:nth-of-type(3) article {
+  position: relative;
+  /* border: 1px solid red; */
+  width: 90vw;
+  margin-top: 7em;
+  color: #00471B;
+}
+
+section:nth-of-type(3) img {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
